@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  background-color: #f5f6f7;
+  border-radius: 10px;
+  height: 40px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  outline-color: gray;
+  padding: 10px;
+}
+
+span {
+  font-weight: 600;
+}
+
+.simuBtn {
+  background-color: black;
+  color: white;
+}
+
+.simuBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.rtnBtn:hover {
+  background-color: black;
+  color: white;
+}
+.simuBtn,
+.rtnBtn {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  width: 50%;
+  font-weight: 600;
+}
