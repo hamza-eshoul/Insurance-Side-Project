@@ -86,13 +86,13 @@ const InsuranceForm = ({
     setDateDemandeRachat("");
   };
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen ">
       {/* image */}
       <img src={insurance} className="hidden lg:w-1/3 lg:block" />
 
       {/* form */}
       <div className="flex flex-grow justify-center items-center">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-9">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-9 max-w-2xl">
           <h1 className="text-3xl font-semibold text-center border-b-[1px] border-zinc-200 pb-2">
             Simulateur Rachat Total Age d'ôr Retraite
           </h1>
@@ -233,6 +233,14 @@ const InsuranceForm = ({
               {" "}
               Actualités lois de finance 2023{" "}
             </a>
+          </div>
+          <div className="flex p-3 text-center border-[1px] border-black">
+            N.B:
+            <span className="font-bold pl-1">
+              Si vous avez jamais bénéficié d’une déduction fiscale, vous pouvez
+              racheter votre argent 0 impôt en ramenant une attestation de non
+              déductibilité{" "}
+            </span>
           </div>
         </form>
       </div>
